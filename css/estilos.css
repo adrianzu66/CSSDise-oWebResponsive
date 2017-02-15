@@ -1,0 +1,393 @@
+/*paisajes*/
+.contenido{
+	width: 80%;
+	/*margin-left: 10%;
+	margin-right: 10%;*/
+	margin: 0 auto;
+	text-align: center;
+}
+.galeria{
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	width: 100%;
+	background-color: #d5c75f;
+	padding-top: 2%;
+
+}
+div [class*="paisaje"]{
+	-webkit-flex: 1 1 20%;
+	flex: 1 1 20%;
+	padding: 2%;
+	padding-bottom: 2%;
+
+}
+.galeria div:nth-child(even) img{
+	-webkit-filter: grayscale(100%);
+}
+.paisaje1{
+	margin: 2%;
+	-webkit-order: 1;
+}
+.paisaje1 img{
+	width: 100%;
+	-webkit-filter: blur(10px);
+}
+.paisaje2{
+	margin: 2%;
+	-webkit-order: 2;
+	padding-bottom: 10%;
+}
+.paisaje2 img{
+	width: 100%;
+	height: 90%;
+}
+.paisaje3{
+	margin: 2%;
+	-webkit-order: 3;
+}
+.paisaje3 img{
+	width: 100%;
+	filter: sepia(90%);
+}
+.paisaje4{
+	margin: 2%;
+	-webkit-order: 4;
+}
+.paisaje4 img{
+	width: 100%;
+	height: 90%;
+}
+.paisaje5{
+	margin: 2%;
+	-webkit-order: 5;
+}
+.paisaje5 img{
+	width: 100%;
+	height: 90%;
+}
+.paisaje6{
+	margin: 2%;
+	-webkit-order: 6;
+}
+.paisaje6 img{
+	width: 100%;
+}
+
+/*responsive*/
+/*desktop*/
+@media(min-width: 900px)
+{
+	body {
+		margin: 20px;
+		background-color: black;
+		color: white;
+		font-family: 'Dancing Script', cursive;
+	}
+	header{
+		background: -webkit-linear-gradient(left, #008fb3, #005ccc); /* For Safari 5.1 to 6.0 *//
+		background: linear-gradient(to right, #008fb3, #005ccc); /* Standard syntax */
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		text-shadow: 2px #02010a;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		align-content: center;
+		transition: 1s;
+		animation: animacionEntrada 1s;
+	}
+	header h1{
+		padding-left: 2%;
+		display: inline-block;
+		text-align: left;
+	}
+	header ul{
+		list-style: none;
+		float: right;
+	}
+	header li{
+		display: inline-block;
+		margin: 7px;
+		font-size: auto;
+	}
+	header a{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	#contenido {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contenido > h1 {
+		padding: 10px;
+		text-align: center;
+	}
+
+	footer {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius:10px;
+		text-align: center;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		background-color: #005ccc;
+		display: flex;
+		flex-direction: row;
+	}
+	footer div{
+		width: 25%;
+		align-content: center;
+	}
+	.contenedor {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.contenedor > div {
+		text-align: center;
+		width: 50%;
+	}
+
+
+	@keyframes animacionEntrada {
+		0% {
+			margin-top: 150%;
+		}
+		60% {
+			margin-top: -5%;
+		}
+		100% {
+			margin-top: 0%;
+		}
+	}
+
+	article{
+		text-align: center;
+		background-color: #82c3a6;
+		display: inline-block;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#imagen1{
+		padding-top: 3%;
+		padding-bottom: 4%;
+		width: 100%
+	}
+	#imagen1 img{
+		width: 40%;
+	}
+	img{
+		box-shadow: 2px 2px #02010a;
+	}
+
+
+	#imagen2{
+		background-color: #d5c75f ;
+		border-width: 1px;
+		padding-top: 3%;
+		padding-bottom: 4%;
+	}
+
+	#imagen2 img{
+		width: 60%;
+		height: 90%
+	}
+	#imagen2 img:hover {
+		transform: rotate(10deg);
+		box-shadow: 2px 2px #82c3a6;
+	}
+	#imagen3 img:hover {
+		transform: translate(5px,-20px);
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	#imagen3 img{
+		width: 60%;
+		width: 60%;
+		height: 90%
+	}
+
+	#imagen3 {
+		background-color: #d5c75f ;
+		padding-top: 3%;
+		padding-bottom: 4%;
+	}
+	a:visited{
+		text-decoration: none;
+		color: inherit;
+	}
+	a:link{
+		text-decoration: none;
+		color: inherit;
+	}
+	/*paisajes*/
+	.galeria{
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		width: 100%;
+		background-color: #d5c75f;
+		padding-top: 2%;
+
+	}
+
+}
+/*movil*/
+@media(max-width: 900px)
+{
+	body {
+		/*margin: 20px;*/
+		background-color: black;
+		color: white;
+		font-family: 'Dancing Script', cursive;
+	}
+	header{
+		background: -webkit-linear-gradient(left, #008fb3, #005ccc); /* For Safari 5.1 to 6.0 *//
+		background: linear-gradient(to right, #008fb3, #005ccc); /* Standard syntax */
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		text-shadow: 2px #02010a;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		transition: 1s;
+		animation: animacionEntrada 1s;
+	}
+	header h1{
+		text-align: center;
+		}
+	header ul{
+		list-style: none;
+		text-align: center;
+		margin-left:  0px;
+	}
+	header li{
+		display: inline-block;
+		margin-left: 7px;
+	}
+	header a{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	#contenido {
+		/*display: flex;
+		flex-direction: column;*/
+	}
+
+	#contenido > h1 {
+		text-align: center;
+	}
+
+	footer {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius:10px;
+		text-align: center;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		background-color: #005ccc;
+		display: flex;
+		flex-direction: column;
+	}
+	footer div{
+		width: 100%;
+		align-content: center;
+	}
+	.contenedor {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	img{
+		border: 2px solid white;
+	}
+	.galeria img {
+		width: 100%;
+	}
+
+	.contenedor > div {
+		text-align: center;
+		width: 100%;
+	}
+
+
+	@keyframes animacionEntrada {
+		0% {
+			margin-top: 150%;
+		}
+		60% {
+			margin-top: -5%;
+		}
+		100% {
+			margin-top: 0%;
+		}
+	}
+
+	#imagen1 img {
+		border: 4px solid white;
+		animation-name: imagen1-animacion;
+		animation-duration: 2s;
+
+	}
+	article{
+		text-align: center;
+		background-color: #82c3a6;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#imagen1{
+		padding-top: 3%;
+		padding-bottom: 4%;
+	}
+	img{
+		width: 250px;
+		box-shadow: 2px 2px #02010a;
+	}
+
+
+	#imagen2{
+		background-color: #d5c75f ;
+		border-width: 1px;
+		padding-top: 3%;
+		padding-bottom: 4%;
+	}
+	#imagen2 img:hover {
+		transform: rotate(10deg);
+		box-shadow: 2px 2px #82c3a6;
+	}
+	#imagen3 img:hover {
+		transform: translate(5px,-20px);
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	#imagen3 {
+		background-color: #d5c75f ;
+		padding-top: 3%;
+		padding-bottom: 4%;
+	}
+	a:visited{
+		text-decoration: none;
+		color: inherit;
+	}
+	a:link{
+		text-decoration: none;
+		color: inherit;
+	}
+	.galeria{
+		display: flex;
+		-webkit-flex-flow: column;
+		width: 100%;
+		background-color: #d5c75f;
+		padding-top: 2%;
+
+	}
+}
